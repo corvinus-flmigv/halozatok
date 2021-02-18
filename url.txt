@@ -1,0 +1,3 @@
+https://github.com/corvinus-flmigv/halozatok.git
+
+https://corvinus-flmigv.azurewebsites.net
