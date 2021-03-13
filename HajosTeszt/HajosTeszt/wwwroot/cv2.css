@@ -3,73 +3,53 @@
 }
 
 body {
-    text-align: center;
     font-weight: bold;
+    text-align: center;
 }
 
-div {
-    border: 3px dashed grey;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-}
-
-#header{
-    background-color: aqua;
+#header {
+    background-color: tomato;
     padding: 20px;
 }
 
-#nav{
-    background-color: grey;
+#nav a {
+    flex: 1 1 auto;
+    text-decoration: none;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+#nav {
+    background: gold;
+    padding: 20px;
+}
+
+#article {
+    text-align: left;
+    background: deepskyblue;
     padding: 20px;
     display: flex;
 }
 
-#nav a{
-    text-decoration: none;
-    color: black;
-    flex: 1 1 auto;
-}
-
-h1, h2 {
+#aside {
+    background-color: lightgreen;
+    padding: 20px;
+    display: block;
+    margin: auto;
     text-align: center;
-    text-decoration: underline;
 }
 
-a {
-    background-color: lightblue;
-    border-radius: 10px;
-    padding: 10px;
+#footer {
+    background: hotpink;
 }
 
-a:hover {
-    background-color: grey;
-}
-
-span {
-    color: lightblue;
-    font-size: 40px;
-    font-style: italic;
-    font-weight: bold;
-}
-
-#listak {
-    background-color: lightblue;
-}
-
-.megisfeher {
-    background-color: white;
+.hobbik {
     border-radius: 10px;
     width: 100px
 }
 
-.sorrendi {
+.iskolak {
     font-style: italic;
-}
-
-img {
-    display: block;
-    margin: auto;
 }
 
 @media screen and (min-width: 800px) {
@@ -80,20 +60,20 @@ img {
         margin: auto;
     }
 
-    #szöveg {
+    #main {
         display: flex;
     }
 
-    #kep,
-    #listak {
+    #nav,
+    #header {
         order: -1;
     }
 
-    #szöveg {
+    #article {
         flex: 1 1 75%;
     }
 
-    #nav {
+    #aside {
         flex: 1 1 25%;
     }
 }
