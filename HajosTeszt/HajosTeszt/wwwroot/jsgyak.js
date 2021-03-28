@@ -22,7 +22,7 @@
             sor.appendChild(szam)
             szam.classList.add("elem")
             szam.innerText = faktorialisR(i) / (faktorialisR(j) * faktorialisR(i - j))
-            szam.style.backgroundColor = 'rgb(${255/10*i},0,${255/10*j})'
+            szam.style.backgroundColor = `rgb(${255/10*i},0,${255/10*j})`
         }
     }
 }
