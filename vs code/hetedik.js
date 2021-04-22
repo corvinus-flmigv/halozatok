@@ -1,4 +1,4 @@
-﻿var kérdések;
+var kérdések;
 var aktuálisKérdésSorszáma = 0;
 
 function letöltés() {
@@ -85,11 +85,11 @@ window.onload = () => {
     document.getElementById("válasz1").onclick = () => {
 
         if (kérdések[aktuálisKérdésSorszáma].correctAnswer == 1) {
-            document.getElementById("válasz1").style.background = "lightgreen";
+            document.getElementById("válasz1").style.background = "darkgreen";
         }
         else {
             document.getElementById("válasz1").style.background = "lightcoral";
-            document.getElementById("válasz" + kérdések[aktuálisKérdésSorszáma].correctAnswer).style.background = "lightgreen";
+            document.getElementById("válasz" + kérdések[aktuálisKérdésSorszáma].correctAnswer).style.background = "darkgreen";
         }
 
         document.getElementById("válasz1").style.pointerEvents = 'none';
@@ -101,11 +101,11 @@ window.onload = () => {
     document.getElementById("válasz2").onclick = () => {
 
         if (kérdések[aktuálisKérdésSorszáma].correctAnswer == 2) {
-            document.getElementById("válasz2").style.background = "lightgreen";
+            document.getElementById("válasz2").style.background = "darkgreen";
         }
         else {
             document.getElementById("válasz2").style.background = "lightcoral";
-            document.getElementById("válasz" + kérdések[aktuálisKérdésSorszáma].correctAnswer).style.background = "lightgreen";
+            document.getElementById("válasz" + kérdések[aktuálisKérdésSorszáma].correctAnswer).style.background = "darkgreen";
         }
 
         document.getElementById("válasz1").style.pointerEvents = 'none';
@@ -116,11 +116,11 @@ window.onload = () => {
     document.getElementById("válasz3").onclick = () => {
 
         if (kérdések[aktuálisKérdésSorszáma].correctAnswer == 3) {
-            document.getElementById("válasz3").style.background = "lightgreen";
+            document.getElementById("válasz3").style.background = "darkgreen";
         }
         else {
             document.getElementById("válasz3").style.background = "lightcoral";
-            document.getElementById("válasz" + kérdések[aktuálisKérdésSorszáma].correctAnswer).style.background = "lightgreen";
+            document.getElementById("válasz" + kérdések[aktuálisKérdésSorszáma].correctAnswer).style.background = "darkgreen";
         }
 
         document.getElementById("válasz1").style.pointerEvents = 'none';

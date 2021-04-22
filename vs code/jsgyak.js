@@ -1,4 +1,4 @@
-﻿window.onload = () => {
+window.onload = () => {
     console.log("betöltődött")
 
     var faktorialisR = function (n) {
@@ -22,7 +22,7 @@
             sor.appendChild(szam)
             szam.classList.add("elem")
             szam.innerText = faktorialisR(i) / (faktorialisR(j) * faktorialisR(i - j))
-            szam.style.backgroundColor = `rgb(${255 / szam.innerText},0,${255 / szam.innerText})`
+            szam.style.backgroundColor = `rgb(${255/szam.innerText},0,${255/szam.innerText})`
             szam.style.color = `rgb(255,255,255)`
         }
     }

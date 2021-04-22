@@ -1,4 +1,4 @@
-﻿html, body {
+html, body {
     height: 100%;
     background-color: #f9f7f7;
     font-family: 'Montserrat', sans-serif;
@@ -54,8 +54,8 @@ div {
     text-align: center;
 }
 
-.kattintható {
-    cursor: pointer;
+.kattintható{
+  cursor: pointer;
 }
 
 .gomb:hover {
@@ -73,21 +73,29 @@ div {
     border: groove;
 }
 
-@media only screen and (max-width: 1000px) {
+.jo{
+    background-color: lightgreen;
+}
 
-    #középső {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-    }
+.rossz{
+    background-color: lightcoral;
+}
 
-    #kép {
-        display: block;
-        text-align: center;
-    }
+@media only screen and (max-width: 1000px){
+  
+  #középső {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
 
-    #válaszok {
-        flex-grow: 0;
-        flex-shrink: 0;
-    }
+#kép{
+    display: block;
+    text-align: center;
+}
+
+#válaszok {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
 }
