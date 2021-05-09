@@ -66,11 +66,26 @@ div {
 .kattintható:hover {
     background-color: #3f72af;
     color: white;
+    cursor: pointer;
 }
 
 .kerdes {
     padding: 20px;
     border: groove;
+}
+
+.rejtett{
+    display: none;
+}
+
+.jó {
+    background-color: lightgreen;
+    color: white;
+}
+
+.rossz {
+    background-color: lightcoral;
+    color: white;
 }
 
 @media only screen and (max-width: 1000px) {

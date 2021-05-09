@@ -1,9 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace HajosTeszt.Controllers
 {
@@ -11,10 +12,9 @@ namespace HajosTeszt.Controllers
     [ApiController]
     public class JokeController : ControllerBase
     {
-
-        public static List<Joke> Jokes = new List<Joke>();
-
-        // GET: api/jokes
+        public static List<Joke> Jokes = new List<Joke>(); 
+        
+        // GET: api/<JokeController>
         [HttpGet]
         public ActionResult Get()
         {
@@ -49,6 +49,7 @@ namespace HajosTeszt.Controllers
             Jokes.RemoveAt(id);
         }
     }
+
     public class Joke
     {
         public string Text { get; set; }

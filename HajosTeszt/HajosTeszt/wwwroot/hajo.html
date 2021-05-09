@@ -3,7 +3,8 @@
     <meta charset="utf-8" />
     <title>Hajós teszt</title>
     <link href="hajo.css" rel="stylesheet" />
-    <script src="hetedik.js"></script>
+    <!--<script src="hetedik.js"></script>-->
+    <script src="tizedik.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,17 +17,32 @@
 
         <div id="középső">
             <div id="válaszok">
-                <div id="válasz1" class="kerdes kattintható">Válasz 1</div>
-                <div id="válasz2" class="kerdes kattintható jo">Válasz 2</div>
-                <div id="válasz3" class="kerdes kattintható rossz">Válasz 3</div>
+                <div id="válasz1" onclick="választás(1)" class="kerdes kattintható">Válasz 1</div>
+                <div id="válasz2" onclick="választás(2)" class="kerdes kattintható jó">Válasz 2</div>
+                <div id="válasz3" onclick="választás(3)" class="kerdes kattintható rossz">Válasz 3</div>
             </div>
-            <div id="kép">
-                <img id="kép1" src="https://szoft1.comeback.hu/hajo/teszt-0050.jpg" />
+            <div id="kép_keret">
+                <img id="kép" class="rejtett" src="https://szoft1.comeback.hu/hajo/teszt-0050.jpg" />
             </div>
         </div>
         <div id="vezérlő">
             <div id="vissza" class="gomb kattintható">Vissza</div>
             <div id="előre" class="gomb kattintható">Előre</div>
         </div>
+
+        <!--<div id="középső">
+            <div id="válaszok">
+                <div id="válasz1" onclick="szinezés(this.id)" class="kerdes kattintható">Válasz 1</div>
+                <div id="válasz2" onclick="szinezés(this.id)" class="kerdes kattintható">Válasz 2</div>
+                <div id="válasz3" onclick="szinezés(this.id)" class="kerdes kattintható">Válasz 3</div>
+            </div>
+            <div id="kép">
+                <img id="kép" src="https://szoft1.comeback.hu/hajo/teszt-0050.jpg" />
+            </div>
+        </div>
+        <div id="vezérlő">
+            <div onclick="back()" class="gomb kattintható">Vissza</div>
+            <div onclick="next()" class="gomb kattintható">Előre</div>
+        </div>-->
     </div>
 </body>
